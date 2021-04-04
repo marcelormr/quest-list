@@ -1394,6 +1394,92 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(combatLevel: 85),
         questPointsReward: 2
         );
+    static Quest grimTales = new Quest(
+        name: "Grim Tales",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { witchsHouse },
+        otherRequirements: new OtherRequirements(
+            farmingLevel: 45,
+            herbloreLevel: 52,
+            thievingLevel: 58,
+            agilityLevel: 59,
+            woodcuttingLevel: 71
+            ),
+        questPointsReward: 1
+        );
+    static Quest kingsRansom = new Quest(
+        name: "King's Ransom",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            holyGrail,
+            murderMystery,
+            oneSmallFavour
+        },
+        otherRequirements: new OtherRequirements(
+            magicLevel: 45,
+            defenceLevel: 65),
+        questPointsReward: 1
+        );
+    static Quest thePathOfGlouphrie = new Quest(
+        name: "The Path of Glouphrie",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            waterfallQuest,
+            theEyesOfGlouphrie,
+            treeGnomeVillage
+        },
+        otherRequirements: new OtherRequirements(
+            strengthLevel: 60,
+            thievingLevel: 56,
+            slayerLevel: 56,
+            rangedLevel: 47,
+            agilityLevel: 45
+            ),
+        questPointsReward: 1
+        );
+    static Quest backToMyRoots = new Quest(
+        name: "Back to my Roots",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            aFairyTaleIGrowingPains,
+            theHandInTheSand,
+            oneSmallFavour,
+            tribalTotem
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 55,
+            farmingLevel: 53,
+            slayerLevel: 59,
+            woodcuttingLevel: 72
+            ),
+        questPointsReward: 1
+        );
+    static Quest oneFootInTheGrave = new Quest(
+        name: "One Foot in the Grave",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { backToMyRoots },
+        isMiniquest: true
+        );
+    static Quest landOfTheGoblins = new Quest(
+        name: "Land of the Goblins",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> 
+        {
+            anotherSliceOfHAM,
+            fishingContest
+        },
+        otherRequirements: new OtherRequirements(
+            prayerLevel: 30,
+            agilityLevel: 36,
+            fishingLevel: 36,
+            thievingLevel: 36,
+            herbloreLevel: 37
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
