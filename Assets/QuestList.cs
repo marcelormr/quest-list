@@ -1607,6 +1607,13 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest desertSlayerDungeon = new Quest(
+        name: "Desert Slayer Dungeon",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { smokingKills },
+        otherRequirements: new OtherRequirements (slayerLevel: 70),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
