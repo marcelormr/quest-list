@@ -1571,6 +1571,17 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest perilsOfIceMountain = new Quest(
+        name: "Perils of Ice Mountain",
+        difficulty: "Novice",
+        otherRequirements: new OtherRequirements(
+            farmingLevel: 5,
+            hunterLevel: 5,
+            thievingLevel: 5,
+            constructionLevel: 5
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
