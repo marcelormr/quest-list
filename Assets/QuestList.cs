@@ -1552,6 +1552,25 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(miningLevel: 46),
         questPointsReward: 1
         );
+    static Quest legacyOfSeergaze = new Quest(
+        name: "Legacy of Seergaze",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            theDarknessOfHallowvale,
+            shadesOfMortton
+        },
+        otherRequirements: new OtherRequirements(
+            constructionLevel: 20,
+            agilityLevel: 29,
+            slayerLevel: 31,
+            miningLevel: 35,
+            firemakingLevel: 40,
+            craftingLevel: 47,
+            magicLevel: 49
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
