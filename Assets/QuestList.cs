@@ -1614,6 +1614,18 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements (slayerLevel: 70),
         isMiniquest: true
         );
+    static Quest rockingOut = new Quest(
+        name: "Rocking Out",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { theGreatBrainRobbery },
+        otherRequirements: new OtherRequirements (
+            agilityLevel: 60,
+            thievingLevel: 63,
+            craftingLevel: 66,
+            smithingLevel: 69
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
