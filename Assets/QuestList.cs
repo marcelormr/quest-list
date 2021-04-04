@@ -1525,6 +1525,16 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest catapultConstruction = new Quest(
+        name: "Catapult Construction",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { regicide },
+        otherRequirements: new OtherRequirements (
+            fletchingLevel: 42,
+            constructionLevel: 44
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
