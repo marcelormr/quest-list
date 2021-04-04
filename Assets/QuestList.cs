@@ -1582,6 +1582,17 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest tokTzKetDill = new Quest(
+        name: "TokTz-Ket-Dill",
+        difficulty: "Experienced",
+        otherRequirements: new OtherRequirements(
+            constructionLevel: 50,
+            strengthLevel: 45,
+            craftingLevel: 43,
+            miningLevel: 40
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
