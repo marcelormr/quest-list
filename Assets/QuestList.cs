@@ -1643,6 +1643,13 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest meetingHistory = new Quest(
+        name: "Meeting History",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { makingHistory },
+        otherRequirements: new OtherRequirements(herbloreLevel: 3),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
