@@ -1631,6 +1631,18 @@ public class QuestList : MonoBehaviour
         difficulty: "Tutorial",
         questPointsReward: 1
         );
+    static Quest spiritOfSummer = new Quest(
+        name: "Spirit of Summer",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { theRestlessGhost },
+        otherRequirements: new OtherRequirements(
+            summoningLevel: 19,
+            farmingLevel: 26,
+            prayerLevel: 35,
+            constructionLevel: 40
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
