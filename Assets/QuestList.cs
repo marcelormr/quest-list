@@ -1611,14 +1611,14 @@ public class QuestList : MonoBehaviour
         name: "Desert Slayer Dungeon",
         difficulty: "Intermediate",
         questRequirements: new List<Quest> { smokingKills },
-        otherRequirements: new OtherRequirements (slayerLevel: 70),
+        otherRequirements: new OtherRequirements(slayerLevel: 70),
         isMiniquest: true
         );
     static Quest rockingOut = new Quest(
         name: "Rocking Out",
         difficulty: "Master",
         questRequirements: new List<Quest> { theGreatBrainRobbery },
-        otherRequirements: new OtherRequirements (
+        otherRequirements: new OtherRequirements(
             agilityLevel: 60,
             thievingLevel: 63,
             craftingLevel: 66,
