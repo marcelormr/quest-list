@@ -1676,13 +1676,13 @@ public class QuestList : MonoBehaviour
         difficulty: "Experienced",
         questRequirements: new List<Quest>
         {
-                demonSlayer,
-                familyCrest,
-                gardenOfTranquility,
-                theKnightsSword,
-                shieldOfArrav,
-                templeOfIkov,
-                whatLiesBelow
+            demonSlayer,
+            familyCrest,
+            gardenOfTranquility,
+            theKnightsSword,
+            shieldOfArrav,
+            templeOfIkov,
+            whatLiesBelow
         },
         otherRequirements: new OtherRequirements(
             agilityLevel: 51,
