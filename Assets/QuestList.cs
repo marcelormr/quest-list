@@ -1671,6 +1671,27 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest defenderOfVarrock = new Quest(
+        name: "Defender of Varrock",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+                demonSlayer,
+                familyCrest,
+                gardenOfTranquility,
+                theKnightsSword,
+                shieldOfArrav,
+                templeOfIkov,
+                whatLiesBelow
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 51,
+            hunterLevel: 51,
+            smithingLevel: 54,
+            miningLevel: 59
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
