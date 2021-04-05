@@ -1657,6 +1657,20 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(firemakingLevel: 43),
         questPointsReward: 1
         );
+    static Quest summersEnd = new Quest(
+        name: "Summer's End",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> { spiritOfSummer },
+        otherRequirements: new OtherRequirements(
+            summoningLevel: 23,
+            hunterLevel: 35,
+            woodcuttingLevel: 37,
+            miningLevel: 45,
+            firemakingLevel: 47,
+            prayerLevel: 55
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
