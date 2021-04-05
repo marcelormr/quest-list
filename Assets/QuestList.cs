@@ -1650,6 +1650,13 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(herbloreLevel: 3),
         questPointsReward: 1
         );
+    static Quest allFiredUp = new Quest(
+        name: "All Fired Up",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { priestInPeril },
+        otherRequirements: new OtherRequirements(firemakingLevel: 43),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
