@@ -1749,6 +1749,17 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest theChosenCommander = new Quest(
+        name: "The Chosen Commander",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> { landOfTheGoblins },
+        otherRequirements: new OtherRequirements (
+            agilityLevel: 46,
+            strengthLevel: 46,
+            thievingLevel: 46
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
