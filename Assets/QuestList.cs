@@ -1734,6 +1734,11 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 5
         );
+    static Quest mythsOfTheWhiteLands = new Quest(
+        name: "Myths of the White Lands",
+        difficulty: "Novice",
+        questPointsReward: 2 //2 quest points (or 1 quest point; depending on whether you had completed Witch's Potion/Sheep Shearer before they got demoted to a miniquest)
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
