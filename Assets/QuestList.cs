@@ -1692,6 +1692,11 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest sweptAway = new Quest(
+        name: "Swept Away",
+        difficulty: "Novice",
+        questPointsReward: 2 //2 quest points (or 1 quest point; depending on whether you had completed Witch's Potion/Sheep Shearer before they got demoted to a miniquest)
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
