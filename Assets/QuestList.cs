@@ -1707,6 +1707,33 @@ public class QuestList : MonoBehaviour
         },
         isMiniquest: true
         );
+    static Quest whileGuthixSleeps = new Quest(
+        name: "While Guthix Sleeps",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            defenderOfVarrock,
+            dreamMentor,
+            theHandInTheSand,
+            kingsRansom,
+            legendsQuest,
+            thePathOfGlouphrie,
+            tearsOfGuthix,
+            wanted,
+            theHuntForSurok
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 25,
+            summoningLevel: 23,
+            hunterLevel: 55,
+            thievingLevel: 60,
+            defenceLevel: 65,
+            farmingLevel: 65,
+            herbloreLevel: 65,
+            magicLevel: 75
+            ),
+        questPointsReward: 5
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
