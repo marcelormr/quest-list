@@ -1789,6 +1789,24 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest missingMyMummy = new Quest(
+        name: "Missing my Mummy",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            theGolem,
+            icthlarinsLittleHelper,
+            //Diamond in the Rough
+        },
+        otherRequirements: new OtherRequirements(
+            constructionLevel: 35,
+            cookingLevel: 35,
+            craftingLevel: 35,
+            magicLevel: 35,
+            prayerLevel: 35
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
