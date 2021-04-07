@@ -1760,6 +1760,24 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 3
         );
+    static Quest gloriousMemories = new Quest(
+        name: "Glorious Memories",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            royalTrouble,
+            theFremennikIsles,
+            mountainDaughter,
+            lunarDiplomacy //Full Reward
+        },
+        otherRequirements: new OtherRequirements (
+            magicLevel: 57,
+            agilityLevel: 50,
+            herbloreLevel: 43,
+            hunterLevel: 41
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
