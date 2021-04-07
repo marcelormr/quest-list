@@ -1822,6 +1822,28 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest theCurseOfArrav = new Quest(
+        name: "The Curse of Arrav",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            defenderOfVarrock,
+            missingMyMummy,
+            shadesOfMortton,
+            theTaleOfTheMuspah,
+            trollRomance,
+        },
+        otherRequirements: new OtherRequirements(
+            slayerLevel: 37,
+            summoningLevel: 41,
+            agilityLevel: 61,
+            rangedLevel: 64,
+            strengthLevel: 64,
+            miningLevel: 64,
+            thievingLevel: 66
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
