@@ -1807,6 +1807,21 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest huntForRedRaktuber = new Quest(
+        name: "Hunt for Red Raktuber",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            coldWar,
+            seaSlug
+        },
+        otherRequirements: new OtherRequirements(
+            thievingLevel: 38,
+            constructionLevel: 45,
+            hunterLevel: 45
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
