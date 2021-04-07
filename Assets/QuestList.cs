@@ -1778,6 +1778,17 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest theTaleOfTheMuspah = new Quest(
+        name: "The Tale of the Muspah",
+        difficulty: "Novice",
+        otherRequirements: new OtherRequirements(
+            firemakingLevel: 6,
+            miningLevel: 8,
+            magicLevel: 10,
+            woodcuttingLevel: 10
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
