@@ -1509,7 +1509,7 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
-    static Quest wolfWhistle = new Quest(
+    static Quest wolfWhistle_old = new Quest(
         name: "Wolf Whistle",
         difficulty: "Novice",
         questPointsReward: 1
@@ -2270,6 +2270,11 @@ public class QuestList : MonoBehaviour
         name: "Druidic Ritual",
         difficulty: "Novice",
         questPointsReward: 4
+        );
+    static Quest wolfWhistle = new Quest(
+        name: "Wolf Whistle",
+        difficulty: "Novice",
+        questPointsReward: 1
         );
     private void Start()
     {
