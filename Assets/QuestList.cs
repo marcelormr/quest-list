@@ -2610,6 +2610,25 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest theMightyFall = new Quest(
+        name: "The Mighty Fall",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            missingPresumedDeath,
+            theChosenCommander,
+            myArmsBigAdventure,
+            theHuntForSurok
+        },
+        otherRequirements: new OtherRequirements(
+            slayerLevel: 69,
+            defenceLevel: 72,
+            constitutionLevel: 78,
+            attackLevel: 79,
+            strengthLevel: 79
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
