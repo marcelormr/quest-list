@@ -2470,6 +2470,16 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 3
         );
+    static Quest wanderingGaal = new Quest(
+        name: "Wandering Ga'al",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            theBrinkOfExtinction,
+            desertTreasure
+        },
+        isMiniquest: true
+        );
     static Quest demonSlayer = new Quest(
         name: "Demon Slayer",
         difficulty: "Novice",
