@@ -2229,6 +2229,28 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest ritualOfTheMahjarrat = new Quest( //<3
+        name: "Ritual of the Mahjarrat",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            enakhrasLament,
+            aFairyTaleIIIBattleAtOrksRift,
+            fightArena,
+            hazeelCult,
+            rockingOut,
+            theSlugMenace,
+            aTailOfTwoCats,
+            theTempleAtSenntisten,
+            whileGuthixSleeps
+        },
+        otherRequirements: new OtherRequirements(
+            craftingLevel: 76,
+            agilityLevel: 77,
+            miningLevel: 76
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
