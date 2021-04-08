@@ -2318,6 +2318,11 @@ public class QuestList : MonoBehaviour
             ),
         isMiniquest: true
         );
+    static Quest songFromTheDepths = new Quest(
+        name: "Song from the Depths",
+        difficulty: "Novice",
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
