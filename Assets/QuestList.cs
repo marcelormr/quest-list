@@ -1911,6 +1911,19 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest nomadsRequiem = new Quest(
+        name: "Nomad's Requiem",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest> { kingsRansom },
+        otherRequirements: new OtherRequirements(
+            magicLevel: 75,
+            prayerLevel: 70,
+            miningLevel: 66,
+            hunterLevel: 65,
+            constructionLevel: 60
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
