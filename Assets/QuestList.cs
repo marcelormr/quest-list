@@ -1959,6 +1959,21 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(thievingLevel: 41),
         isMiniquest: true
         );
+    static Quest aGuildOfOurOwn = new Quest(
+        name: "A Guild of Our Own",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            theFeud,
+            lostHerMarbles
+        },
+        otherRequirements: new OtherRequirements(
+            thievingLevel: 62,
+            agilityLevel: 40,
+            herbloreLevel: 42
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
