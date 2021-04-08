@@ -2029,6 +2029,25 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest aVoidDance = new Quest(
+        name: "A Void Dance",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            quietBeforeTheSwarm,
+            druidicRitual
+        },
+        otherRequirements: new OtherRequirements(
+            hunterLevel: 46,
+            constructionLevel: 47,
+            miningLevel: 47,
+            summoningLevel: 48,
+            herbloreLevel: 49,
+            woodcuttingLevel: 52,
+            thievingLevel: 54
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
