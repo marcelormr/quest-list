@@ -2072,6 +2072,30 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest doNoEvil = new Quest(
+        name: "Do No Evil",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            animalMagnetism,
+            dealingWithScabaras,
+            desertTreasure,
+            missingMyMummy,
+            recipeForDisasterFreeingKingAwowogei,
+            shadowOfTheStorm,
+            smokingKills,
+            gardenOfTranquility, //required to restore Senliten tomb
+            creatureOfFenkenstrain //required to restore Senliten tomb
+        },
+        otherRequirements: new OtherRequirements(
+            rangedLevel: 50,
+            constructionLevel: 64,
+            craftingLevel: 68,
+            magicLevel: 70,
+            thievingLevel: 70
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
