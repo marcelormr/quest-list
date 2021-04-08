@@ -2586,6 +2586,25 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(divinationLevel: 60),
         isMiniquest: true
         );
+    static Quest fateOfTheGods = new Quest(
+        name: "Fate of the Gods",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            missingPresumedDeath,
+            theWorldWakes,
+            theFiremakersCurse,
+            ritualOfTheMahjarrat
+        },
+        otherRequirements: new OtherRequirements(
+            summoningLevel: 67,
+            agilityLevel: 73,
+            divinationLevel: 75,
+            slayerLevel: 76,
+            magicLevel: 79
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
