@@ -1945,6 +1945,13 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(thievingLevel: 5),
         questPointsReward: 1
         );
+    static Quest fromTinyAcorns = new Quest(
+        name: "From Tiny Acorns",
+        difficulty: "Novice",
+        questRequirements: new List<Quest> { buyersAndCellars },
+        otherRequirements: new OtherRequirements(thievingLevel: 24),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
