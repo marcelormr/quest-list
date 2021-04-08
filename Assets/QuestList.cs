@@ -2256,6 +2256,16 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 2
         );
+    static Quest theFiremakersCurse = new Quest(
+        name: "The Firemaker's Curse",
+        difficulty: "Master",
+        otherRequirements: new OtherRequirements(
+            firemakingLevel: 74,
+            constitutionLevel: 76,
+            agilityLevel: 64
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
