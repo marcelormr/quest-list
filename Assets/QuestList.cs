@@ -1998,6 +1998,21 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    //Sheep Shearer and Witch's Potion become miniquests
+    static Quest quietBeforeTheSwarm = new Quest(
+        name: "Quiet Before the Swarm",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            impCatcher,
+            wanted
+        },
+        otherRequirements: new OtherRequirements(
+            attackLevel: 35,
+            strengthLevel: 42
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
