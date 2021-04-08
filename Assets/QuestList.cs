@@ -2338,6 +2338,18 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest someLikeItCold = new Quest(
+        name: "Some Like It Cold",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> { huntForRedRaktuber },
+        otherRequirements: new OtherRequirements(
+            fishingLevel: 65,
+            craftingLevel: 56,
+            constructionLevel: 50,
+            thievingLevel: 50
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
