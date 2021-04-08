@@ -1974,6 +1974,19 @@ public class QuestList : MonoBehaviour
             ),
         isMiniquest: true
         );
+    static Quest aFairyTaleIIIBattleAtOrksRift = new Quest(
+        name: "A Fairy Tale III - Battle At Ork's Rift",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> { aFairyTaleIICureAQueen },
+        otherRequirements: new OtherRequirements(
+            magicLevel: 59,
+            farmingLevel: 54,
+            thievingLevel: 51,
+            summoningLevel: 37,
+            craftingLevel: 36
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
