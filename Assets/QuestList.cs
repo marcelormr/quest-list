@@ -2055,6 +2055,23 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(craftingLevel: 5),
         questPointsReward: 5 //(only if Romeo & Juliet has not been completed)
         );
+    static Quest theVoidStaresBack = new Quest(
+        name: "The Void Stares Back",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest> { aVoidDance },
+        otherRequirements: new OtherRequirements(
+            magicLevel: 80,
+            attackLevel: 78,
+            strengthLevel: 78,
+            firemakingLevel: 71,
+            constructionLevel: 70,
+            craftingLevel: 70,
+            smithingLevel: 70,
+            summoningLevel: 55,
+            defenceLevel: 25
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
