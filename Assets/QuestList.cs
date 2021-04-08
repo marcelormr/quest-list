@@ -2140,6 +2140,21 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest aClockworkSyringe = new Quest(
+        name: "A Clockwork Syringe",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { rockingOut },
+        otherRequirements: new OtherRequirements(
+            dungeoneeringLevel: 50,
+            slayerLevel: 61,
+            constructionLevel: 62,
+            summoningLevel: 65,
+            smithingLevel: 74,
+            thievingLevel: 74,
+            defenceLevel: 76
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
