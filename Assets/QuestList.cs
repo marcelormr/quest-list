@@ -131,7 +131,7 @@ public class QuestList : MonoBehaviour
         difficulty: "Experienced",
         otherRequirements: new OtherRequirements(questPointsRequired: 33)
         );
-    static Quest druidicRitual = new Quest(
+    static Quest druidicRitual_old = new Quest(
         name: "Druidic Ritual",
         questPointsReward: 4,
         difficulty: "Novice"
@@ -2265,6 +2265,11 @@ public class QuestList : MonoBehaviour
             agilityLevel: 64
             ),
         questPointsReward: 2
+        );
+    static Quest druidicRitual = new Quest(
+        name: "Druidic Ritual",
+        difficulty: "Novice",
+        questPointsReward: 4
         );
     private void Start()
     {
