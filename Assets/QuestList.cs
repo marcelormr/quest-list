@@ -2251,6 +2251,11 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 3
         );
+    static Quest aPiercingNote = new Quest(
+        name: "A Piercing Note",
+        difficulty: "Novice",
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
