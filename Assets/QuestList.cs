@@ -2459,6 +2459,17 @@ public class QuestList : MonoBehaviour
         questRequirements: new List<Quest> { runeMemories },
         questPointsReward: 1
         );
+    static Quest theBrinkOfExtinction = new Quest(
+        name: "The Brink of Extinction",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest> { theElderKiln },
+        otherRequirements: new OtherRequirements(
+            defenceLevel: 80,
+            smithingLevel: 80,
+            miningLevel: 72
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
