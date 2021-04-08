@@ -1851,6 +1851,21 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(slayerLevel: 25),
         questPointsReward: 2
         );
+    static Quest forgivenessOfAChaosDwarf = new Quest(
+        name: "Forgiveness of a Chaos Dwarf",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            forgettableTaleOfADrunkenDwarf,
+            betweenARock
+        },
+        otherRequirements: new OtherRequirements(
+            hunterLevel: 61,
+            firemakingLevel: 61,
+            strengthLevel: 69
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
