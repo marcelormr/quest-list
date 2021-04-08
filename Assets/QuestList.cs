@@ -2096,6 +2096,21 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest kingOfTheDwarves = new Quest(
+        name: "King of the Dwarves",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            forgivenessOfAChaosDwarf,
+            myArmsBigAdventure
+        },
+        otherRequirements: new OtherRequirements(
+            miningLevel: 68,
+            smithingLevel: 70,
+            strengthLevel: 77
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
