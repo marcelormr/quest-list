@@ -2406,6 +2406,13 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(smithingLevel: 50),
         isMiniquest: true
         );
+    static Quest doricsTaskVI = new Quest(
+        name: "Doric's Task VI",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> { doricsTaskV },
+        otherRequirements: new OtherRequirements(smithingLevel: 60),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
