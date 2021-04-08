@@ -420,7 +420,7 @@ public class QuestList : MonoBehaviour
             },
         questPointsReward: 2
         );
-    static Quest deathPlateau = new Quest(
+    static Quest deathPlateau_old = new Quest(
         name: "Death Plateau",
         difficulty: "Novice",
         questPointsReward: 1
@@ -2273,6 +2273,11 @@ public class QuestList : MonoBehaviour
         );
     static Quest wolfWhistle = new Quest(
         name: "Wolf Whistle",
+        difficulty: "Novice",
+        questPointsReward: 1
+        );
+    static Quest deathPlateau = new Quest(
+        name: "Death Plateau",
         difficulty: "Novice",
         questPointsReward: 1
         );
