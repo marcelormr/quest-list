@@ -1952,6 +1952,13 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(thievingLevel: 24),
         isMiniquest: true
         );
+    static Quest lostHerMarbles = new Quest(
+        name: "Lost Her Marbles",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { fromTinyAcorns },
+        otherRequirements: new OtherRequirements(thievingLevel: 41),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
