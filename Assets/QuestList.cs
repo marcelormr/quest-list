@@ -2451,7 +2451,7 @@ public class QuestList : MonoBehaviour
     static Quest runeMysteries = new Quest(
         name: "Rune Mysteries",
         difficulty: "Novice",
-        questPointsReward: 1
+        questPointsReward: 1  //(only if you did not complete Rune Mysteries before its removal)
         );
     static Quest runeMemories = new Quest(
         name: "Rune Memories",
