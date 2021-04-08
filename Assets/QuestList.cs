@@ -2513,6 +2513,16 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 3
         );
+    static Quest bringingHomeTheBacon = new Quest(
+        name: "Bringing Home the Bacon",
+        difficulty: "Novice",
+        otherRequirements: new OtherRequirements(
+            farmingLevel: 14,
+            summoningLevel: 14,
+            constructionLevel: 14
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
