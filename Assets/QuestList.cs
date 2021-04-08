@@ -2427,6 +2427,13 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(smithingLevel: 70),
         isMiniquest: true
         );
+    static Quest boricsTaskI = new Quest(
+        name: "Boric's Task I",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { whatsMineIsYours },
+        otherRequirements: new OtherRequirements(miningLevel: 30),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
