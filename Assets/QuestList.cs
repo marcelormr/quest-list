@@ -2296,6 +2296,18 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    //This miniquest is the first one to have "For the full understanding of the story it's recommended to have completed the following:"
+    static Quest nadir = new Quest(
+        name: "Nadir",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest> { ritualOfTheMahjarrat },
+        otherRequirements: new OtherRequirements(
+            dungeoneeringLevel: 55,
+            thievingLevel: 45,
+            attackLevel: 60
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
