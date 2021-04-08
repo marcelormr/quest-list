@@ -2523,6 +2523,11 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest theDeathOfChivalry = new Quest(
+        name: "The Death of Chivalry",
+        difficulty: "Novice",
+        questPointsReward: 3 // (only if you had not completed Black Knights' Fortress before its removal)
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
