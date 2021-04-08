@@ -1883,6 +1883,18 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest theTempleAtSenntisten = new Quest(
+        name: "The Temple at Senntisten",
+        difficulty: "Master",
+        questRequirements: new List<Quest> 
+        {
+            desertTreasure,
+            deviousMinds,
+            theCurseOfArrav
+        },
+        otherRequirements: new OtherRequirements(prayerLevel: 50),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
