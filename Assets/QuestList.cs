@@ -1871,6 +1871,18 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest withinTheLight = new Quest(
+        name: "Within the Light",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { mourningsEndPartII },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 69,
+            fletchingLevel: 70,
+            rangedLevel: 75,
+            woodcuttingLevel: 75
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
