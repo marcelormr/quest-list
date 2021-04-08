@@ -1987,6 +1987,17 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest elementalWorkshopIII = new Quest(
+        name: "Elemental Workshop III",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { elementalWorshopII },
+        otherRequirements: new OtherRequirements(
+            defenceLevel: 33,
+            miningLevel: 20,
+            smithingLevel: 33
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
