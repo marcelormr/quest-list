@@ -2210,6 +2210,25 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest theBranchesOfDarkmeyer = new Quest(
+        name: "The Branches of Darkmeyer",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            legacyOfSeergaze,
+            legendsQuest
+        },
+        otherRequirements: new OtherRequirements(
+            woodcuttingLevel: 76,
+            fletchingLevel: 70,
+            magicLevel: 70,
+            slayerLevel: 67,
+            craftingLevel: 64,
+            farmingLevel: 63,
+            agilityLevel: 63
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
