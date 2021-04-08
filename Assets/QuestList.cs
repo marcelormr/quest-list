@@ -2629,6 +2629,29 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest plaguesEnd = new Quest(
+        name: "Plague's End",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            makingHistory,
+            catapultConstruction,
+            withinTheLight
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 75,
+            constructionLevel: 75,
+            craftingLevel: 75,
+            dungeoneeringLevel: 75,
+            herbloreLevel: 75,
+            miningLevel: 75,
+            prayerLevel: 75,
+            rangedLevel: 75,
+            summoningLevel: 75,
+            woodcuttingLevel: 75
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
