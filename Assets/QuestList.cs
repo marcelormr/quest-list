@@ -2111,6 +2111,22 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest thePrisonerOfGlouphrie = new Quest(
+        name: "The Prisoner of Glouphrie",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            thePathOfGlouphrie,
+            rovingElves
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 64,
+            constructionLevel: 62,
+            runecraftingLevel: 61,
+            thievingLevel: 64
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
