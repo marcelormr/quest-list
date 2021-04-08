@@ -2361,6 +2361,12 @@ public class QuestList : MonoBehaviour
         questRequirements: new List<Quest> { diamondInTheRough },
         questPointsReward: 1
         );
+    static Quest whatsMineIsYours = new Quest(
+        name: "What's Mine is Yours",
+        difficulty: "Novice",
+        otherRequirements: new OtherRequirements(smithingLevel: 5),
+        questPointsReward: 1 // (only if you did not complete Doric's Quest before its removal)
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
