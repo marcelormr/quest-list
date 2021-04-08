@@ -2528,6 +2528,22 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 3 // (only if you had not completed Black Knights' Fortress before its removal)
         );
+    static Quest birthrightOfTheDwarves = new Quest(
+        name: "Birthright of the Dwarves",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest> 
+        { 
+            kingOfTheDwarves,
+            watchtower,       //Recommended
+            theFremennikIsles //Recommended
+        },
+        otherRequirements: new OtherRequirements(
+            miningLevel: 80,
+            smithingLevel: 82,
+            strengthLevel: 85
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
