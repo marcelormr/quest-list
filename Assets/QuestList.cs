@@ -2286,6 +2286,16 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest theElderKiln = new Quest(
+        name: "The Elder Kiln",
+        difficulty: "Master",
+        otherRequirements: new OtherRequirements(
+            magicLevel: 75,
+            agilityLevel: 60,
+            miningLevel: 41
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
