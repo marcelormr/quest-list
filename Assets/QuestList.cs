@@ -2367,6 +2367,13 @@ public class QuestList : MonoBehaviour
         otherRequirements: new OtherRequirements(smithingLevel: 5),
         questPointsReward: 1 // (only if you did not complete Doric's Quest before its removal)
         );
+    static Quest doricsTaskI = new Quest(
+        name: "Doric's Task I",
+        difficulty: "Novice",
+        questRequirements: new List<Quest> { whatsMineIsYours },
+        otherRequirements: new OtherRequirements(smithingLevel: 10),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
