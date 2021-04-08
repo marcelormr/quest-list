@@ -2557,6 +2557,24 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 2
         );
+    static Quest oneOfAKind = new Quest(
+        name: "One of a Kind",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            aTailOfTwoCats,
+            theWorldWakes,
+            kingsRansom,
+            missingPresumedDeath
+        },
+        otherRequirements: new OtherRequirements(
+            divinationLevel: 40,
+            dungeoneeringLevel: 67,
+            summoningLevel: 74,
+            magicLevel: 81
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
