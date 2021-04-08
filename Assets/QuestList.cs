@@ -2013,6 +2013,22 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest loveStory = new Quest(
+        name: "Love Story",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            swanSong,
+            recipeForDisasterFreeingSirAmikVarze
+        },
+        otherRequirements: new OtherRequirements(
+            magicLevel: 77,
+            constructionLevel: 68,
+            smithingLevel: 68,
+            craftingLevel: 67
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
