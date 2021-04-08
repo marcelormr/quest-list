@@ -1466,7 +1466,7 @@ public class QuestList : MonoBehaviour
     static Quest landOfTheGoblins = new Quest(
         name: "Land of the Goblins",
         difficulty: "Experienced",
-        questRequirements: new List<Quest> 
+        questRequirements: new List<Quest>
         {
             anotherSliceOfHAM,
             fishingContest
@@ -1529,7 +1529,7 @@ public class QuestList : MonoBehaviour
         name: "Catapult Construction",
         difficulty: "Master",
         questRequirements: new List<Quest> { regicide },
-        otherRequirements: new OtherRequirements (
+        otherRequirements: new OtherRequirements(
             fletchingLevel: 42,
             constructionLevel: 44
             ),
@@ -1539,7 +1539,7 @@ public class QuestList : MonoBehaviour
         name: "The Hunt for Surok",
         difficulty: "Experienced",
         questRequirements: new List<Quest> { whatLiesBelow },
-        otherRequirements: new OtherRequirements (
+        otherRequirements: new OtherRequirements(
             prayerLevel: 43,
             miningLevel: 42
             ),
@@ -1753,7 +1753,7 @@ public class QuestList : MonoBehaviour
         name: "The Chosen Commander",
         difficulty: "Experienced",
         questRequirements: new List<Quest> { landOfTheGoblins },
-        otherRequirements: new OtherRequirements (
+        otherRequirements: new OtherRequirements(
             agilityLevel: 46,
             strengthLevel: 46,
             thievingLevel: 46
@@ -1770,7 +1770,7 @@ public class QuestList : MonoBehaviour
             mountainDaughter,
             lunarDiplomacy //Full Reward
         },
-        otherRequirements: new OtherRequirements (
+        otherRequirements: new OtherRequirements(
             magicLevel: 57,
             agilityLevel: 50,
             herbloreLevel: 43,
@@ -1886,7 +1886,7 @@ public class QuestList : MonoBehaviour
     static Quest theTempleAtSenntisten = new Quest(
         name: "The Temple at Senntisten",
         difficulty: "Master",
-        questRequirements: new List<Quest> 
+        questRequirements: new List<Quest>
         {
             desertTreasure,
             deviousMinds,
