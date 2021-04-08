@@ -381,7 +381,7 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 4
         );
-    static Quest runeMysteries = new Quest(
+    static Quest runeMysteries_old = new Quest(
         name: "Rune Mysteries",
         difficulty: "Novice",
         questPointsReward: 1
@@ -2447,6 +2447,11 @@ public class QuestList : MonoBehaviour
         questRequirements: new List<Quest> { boricsTaskII },
         otherRequirements: new OtherRequirements(miningLevel: 60),
         isMiniquest: true
+        );
+    static Quest runeMysteries = new Quest(
+        name: "Rune Mysteries",
+        difficulty: "Novice",
+        questPointsReward: 1
         );
     private void Start()
     {
