@@ -2197,6 +2197,19 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest saltInTheWound = new Quest(
+        name: "Salt in the Wound",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest> { kennithsConcerns },
+        otherRequirements: new OtherRequirements(
+            defenceLevel: 60,
+            constitutionLevel: 50,
+            herbloreLevel: 47,
+            summoningLevel: 45,
+            dungeoneeringLevel: 35
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
