@@ -2485,6 +2485,20 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 3 //(only if you did not complete Demon Slayer before its removal)
         );
+    static Quest koscheisTroubles = new Quest(
+        name: "Koschei's Troubles",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            bloodRunsDeep,
+            ritualOfTheMahjarrat
+        },
+        otherRequirements: new OtherRequirements(//Optional for total completion:
+            strengthLevel: 90,
+            prayerLevel: 90
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
