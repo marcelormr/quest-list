@@ -2185,6 +2185,18 @@ public class QuestList : MonoBehaviour
             ),
         isMiniquest: true
         );
+    static Quest deadliestCatch = new Quest(
+        name: "Deadliest Catch",
+        difficulty: "Master",
+        questRequirements: new List<Quest> { towerOfLife },
+        otherRequirements: new OtherRequirements(
+            herbloreLevel: 3,
+            hunterLevel: 67,
+            thievingLevel: 70,
+            fishingLevel: 70
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
