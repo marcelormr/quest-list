@@ -2499,6 +2499,20 @@ public class QuestList : MonoBehaviour
             ),
         isMiniquest: true
         );
+    static Quest theWorldWakes = new Quest(
+        name: "The World Wakes",
+        difficulty: "Grandmaster",
+        //The following optional quests are recommended for full storyline comprehension and additional rewards.
+        questRequirements: new List<Quest>
+        {
+            ritualOfTheMahjarrat,
+            theChosenCommander,
+            theVoidStaresBack,
+            theBranchesOfDarkmeyer,
+            theFiremakersCurse
+        },
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
