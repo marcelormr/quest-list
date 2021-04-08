@@ -48,7 +48,7 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
-    static Quest demonSlayer = new Quest(
+    static Quest demonSlayer_old = new Quest(
         name: "Demon Slayer",
         difficulty: "Novice",
         questPointsReward: 3
@@ -2469,6 +2469,11 @@ public class QuestList : MonoBehaviour
             miningLevel: 72
             ),
         questPointsReward: 3
+        );
+    static Quest demonSlayer = new Quest(
+        name: "Demon Slayer",
+        difficulty: "Novice",
+        questPointsReward: 3 //(only if you did not complete Demon Slayer before its removal)
         );
     private void Start()
     {
