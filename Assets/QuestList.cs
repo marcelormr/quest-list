@@ -2816,6 +2816,21 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest beneathCursedTides = new Quest(
+        name: "Beneath Cursed Tides",
+        difficulty: "Intermediate",
+        otherRequirements: new OtherRequirements(
+            attackLevel: 30,
+            strengthLevel: 30,
+            magicLevel: 30,
+            miningLevel: 30,
+            smithingLevel: 30,
+            woodcuttingLevel: 30,
+            firemakingLevel: 30,
+            cookingLevel: 30
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
