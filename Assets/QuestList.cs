@@ -2657,6 +2657,23 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest heartOfStone = new Quest(
+        name: "Heart of Stone",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            carnilleanRising,
+            runeMemories,
+            runeMechanics,
+            theElderKiln,
+            fateOfTheGods
+        },
+        otherRequirements: new OtherRequirements(
+            runecraftingLevel: 25,
+            magicLevel: 35
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
