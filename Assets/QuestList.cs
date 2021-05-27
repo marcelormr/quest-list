@@ -2674,6 +2674,22 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest dishonourAmongThieves = new Quest(
+        name: "Dishonour Among Thieves",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            hazeelCult,
+            missingPresumedDeath,
+            nomadsRequiem,
+            nadir
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 30,
+            thievingLevel: 30
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
