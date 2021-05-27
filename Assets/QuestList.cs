@@ -2831,6 +2831,27 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest nomadsElegy = new Quest(
+        name: "Nomad's Elegy",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            dishonourAmongThieves,
+            heartOfStone,
+            theMightyFall,
+            throneOfMiscellania,
+            nomadsRequiem,
+            theVoidStaresBack,
+            whileGuthixSleeps,
+            bloodRunsDeep
+        },
+        otherRequirements: new OtherRequirements(
+            miningLevel: 75,
+            constructionLevel: 75,
+            woodcuttingLevel: 75
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
