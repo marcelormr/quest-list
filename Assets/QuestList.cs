@@ -2789,6 +2789,28 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest theLightWithin = new Quest(
+        name: "The Light Within",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            fateOfTheGods,
+            meetingHistory,
+            plaguesEnd,
+            theTempleAtSenntisten,
+            theWorldWakes
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 80,
+            craftingLevel: 80,
+            divinationLevel: 80,
+            herbloreLevel: 80,
+            prayerLevel: 80,
+            slayerLevel: 80,
+            woodcuttingLevel: 80
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
