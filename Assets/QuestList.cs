@@ -2770,6 +2770,25 @@ public class QuestList : MonoBehaviour
         isSubquest: true,
         superQuest: dimensionOfDisaster
         );
+    static Quest herosWelcome = new Quest(
+        name: "Hero's Welcome",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            lunarDiplomacy,
+            taiBwoWannaiTrio,
+            ritualOfTheMahjarrat,
+            oneOfAKind
+        },
+        otherRequirements: new OtherRequirements(
+            divinationLevel: 60,
+            miningLevel: 67,
+            slayerLevel: 62,
+            smithingLevel: 67
+            //Completed all Otto Godblessed's Barbarian Training activities
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
