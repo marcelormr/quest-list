@@ -2690,6 +2690,86 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest dimensionOfDisaster = new Quest(
+        name: "Dimension of Disaster",
+        difficulty: "Special",
+        questRequirements: new List<Quest>
+        {
+            theCurseOfArrav,
+            shadowOfTheStorm
+        },
+        subquests: new List<Quest>
+        {
+            dimensionOfDisasterCoinOfTheRealm,
+            dimensionOfDisasterShieldOfArrav,
+            dimensionOfDisasterDemonSlayer,
+            dimensionOfDisasterDefenderOfVarrock,
+            dimensionOfDisasterCurseOfArrav
+        },
+        questPointsReward: 2
+        );
+    static Quest dimensionOfDisasterCoinOfTheRealm = new Quest(
+        name: "Dimension of Disaster: Coin of the Realm",
+        difficulty: "Special",
+        questPointsReward: 1,
+        isSubquest: true,
+        superQuest: dimensionOfDisaster
+        );
+    static Quest dimensionOfDisasterShieldOfArrav = new Quest(
+        name: "Dimension of Disaster: Shield of Arrav",
+        difficulty: "Special",
+        questRequirements: new List<Quest>
+        {
+            dimensionOfDisasterCoinOfTheRealm,
+            shieldOfArrav
+        },
+        questPointsReward: 1,
+        isSubquest: true,
+        superQuest: dimensionOfDisaster
+        );
+    static Quest dimensionOfDisasterDemonSlayer = new Quest(
+        name: "Dimension of Disaster: Demon Slayer",
+        difficulty: "Special",
+        questRequirements: new List<Quest>
+        {
+            dimensionOfDisasterCoinOfTheRealm,
+            shadowOfTheStorm
+        },
+        questPointsReward: 3,
+        isSubquest: true,
+        superQuest: dimensionOfDisaster
+        );
+    static Quest dimensionOfDisasterDefenderOfVarrock = new Quest(
+        name: "Dimension of Disaster: Defender of Varrock",
+        difficulty: "Special",
+        questRequirements: new List<Quest>
+        {
+            dimensionOfDisasterCoinOfTheRealm,
+            defenderOfVarrock
+        },
+        questPointsReward: 2,
+        isSubquest: true,
+        superQuest: dimensionOfDisaster
+        );
+    static Quest dimensionOfDisasterCurseOfArrav = new Quest(
+        name: "Dimension of Disaster: Curse of Arrav",
+        difficulty: "Special",
+        questRequirements: new List<Quest>
+        {
+            dimensionOfDisasterCoinOfTheRealm,
+            dimensionOfDisasterDemonSlayer,
+            dimensionOfDisasterDefenderOfVarrock,
+            theCurseOfArrav
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 61,
+            strengthLevel: 64,
+            rangedLevel: 64
+            ),
+        questPointsReward: 1,
+        isSubquest: true,
+        superQuest: dimensionOfDisaster
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
