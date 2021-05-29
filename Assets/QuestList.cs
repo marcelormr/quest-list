@@ -2852,6 +2852,20 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest talesOfTheGodWars = new Quest(
+        name: "Tales of the God Wars",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            trollStronghold
+        },
+        otherRequirements: new OtherRequirements(
+            constitutionLevel: 70,
+            strengthLevel: 60,
+            agilityLevel: 60
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
