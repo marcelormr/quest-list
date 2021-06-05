@@ -2961,6 +2961,15 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest flagFall = new Quest(
+        name: "Flag Fall",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            impressingTheLocals
+        },
+        isMiniquest: true
+        );
     static Quest spiritualEnlightenment = new Quest(
         name: "Spiritual Enlightenment",
         difficulty: "Grandmaster",
