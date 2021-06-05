@@ -2902,6 +2902,15 @@ public class QuestList : MonoBehaviour
         },
         isMiniquest: true
         );
+    static Quest benedictsWorldTour = new Quest(
+        name: "Benedict's World Tour",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            stolenHearts
+        },
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
