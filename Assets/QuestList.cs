@@ -3297,6 +3297,22 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 3
         );
+    static Quest sinsOfTheFather = new Quest(
+        name: "Sins of the Father",
+        difficulty: "Novice",
+        questRequirements: new List<Quest>
+        {
+            desperateMeasures
+        },
+        otherRequirements: new OtherRequirements(
+            //Only one needed
+            craftingLevel: 85,
+            runecraftingLevel: 85,
+            smithingLevel: 85,
+            inventionLevel: 85
+            ),
+        isMiniquest: true 
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
