@@ -3133,6 +3133,24 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 1
         );
+    static Quest crocodileTears = new Quest(
+        name: "Crocodile Tears",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            dealingWithScabaras,
+            theJackOfSpades,
+            missingMyMummy,
+            spiritsOfTheElid
+        },
+        otherRequirements: new OtherRequirements(
+            hunterLevel: 73,
+            fishingLevel: 72,
+            woodcuttingLevel: 47,
+            agilityLevel: 30
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
