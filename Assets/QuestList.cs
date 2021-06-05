@@ -3343,6 +3343,16 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         isMiniquest: true
         );
+    static Quest tortleCombat = new Quest(
+        name: "Tortle Combat",
+        difficulty: "Novice",
+        otherRequirements: new OtherRequirements(
+            constructionLevel: 40,
+            farmingLevel: 17
+            //Completed the player-owned farm tutorial
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
