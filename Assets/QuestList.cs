@@ -3269,6 +3269,11 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 3
         );
+    static Quest helpingLaniakea = new Quest(
+        name: "Helping Laniakea",
+        difficulty: "Novice",
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
