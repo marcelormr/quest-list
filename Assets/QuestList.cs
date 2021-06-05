@@ -3237,6 +3237,19 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest curseOfTheBlackStone = new Quest(
+        name: "Curse of the Black Stone",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            impressingTheLocals
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 12,
+            woodcuttingLevel: 34
+            ),
+        questPointsReward: 4
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
