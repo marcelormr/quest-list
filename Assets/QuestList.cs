@@ -2911,6 +2911,27 @@ public class QuestList : MonoBehaviour
         },
         isMiniquest: true
         );
+    static Quest riverOfBlood = new Quest(
+        name: "River of Blood",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            theLordOfVampyrium,
+            defenderOfVarrock,
+            allFiredUp
+        },
+        otherRequirements: new OtherRequirements(
+            herbloreLevel: 80,
+            constitutionLevel: 80,
+            attackLevel: 78,
+            rangedLevel: 78,
+            magicLevel: 78,
+            firemakingLevel: 76,
+            fletchingLevel: 75,
+            miningLevel: 72
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
