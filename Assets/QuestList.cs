@@ -3253,6 +3253,22 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 4
         );
+    static Quest desperateTimes = new Quest(
+        name: "Desperate Times",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            theNeedleSkips,
+            youAreIt,
+            sliskesEndgame
+        },
+        otherRequirements: new OtherRequirements(
+            miningLevel: 50,
+            smithingLevel: 50,
+            divinationLevel: 50
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
