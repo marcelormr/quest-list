@@ -3358,6 +3358,21 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest azzanadrasQuest = new Quest(
+        name: "Azzanadra's Quest",
+        difficulty: "Experienced",
+        questRequirements: new List<Quest>
+        {
+            theVaultOfShadows
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 58,
+            prayerLevel: 58,
+            divinationLevel: 70,
+            archeologyLevel: 58
+            ),
+        questPointsReward: 3
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
