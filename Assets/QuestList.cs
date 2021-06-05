@@ -3064,6 +3064,15 @@ public class QuestList : MonoBehaviour
         },
         isMiniquest: true
         );
+    static Quest damageControl = new Quest(
+        name: "Damage Control",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            harbinger
+        },
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
