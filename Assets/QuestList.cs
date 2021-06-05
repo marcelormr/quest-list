@@ -3243,6 +3243,9 @@ public class QuestList : MonoBehaviour
         questRequirements: new List<Quest>
         {
             impressingTheLocals
+            //Completion of the Temple of Aminishi (any mode)
+            //Completion of the Dragonkin Laboratory (any mode)
+            //Completion of The Shadow Reef (any mode)
         },
         otherRequirements: new OtherRequirements(
             agilityLevel: 12,
