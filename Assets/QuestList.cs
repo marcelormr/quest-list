@@ -3109,6 +3109,21 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 3
         );
+    static Quest backToTheFreezer = new Quest(
+        name: "Back to the Freezer",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            ernestTheChicken,
+            someLikeItCold
+        },
+        otherRequirements: new OtherRequirements(
+            slayerLevel: 37,
+            runecraftingLevel: 45,
+            divinationLevel: 50
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
