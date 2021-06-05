@@ -3021,6 +3021,18 @@ public class QuestList : MonoBehaviour
         },
         isMiniquest: true
         );
+    static Quest eyeForAnEye = new Quest(
+        name: "Eye for an Eye",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            jedHunter
+        },
+        otherRequirements: new OtherRequirements(
+            miningLevel: 90
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
