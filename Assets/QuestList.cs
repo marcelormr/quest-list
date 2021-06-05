@@ -3185,6 +3185,22 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest piecesOfHate = new Quest(
+        name: "Pieces of Hate",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            gertrudesCat,
+            aClockworkSyringe
+        },
+        otherRequirements: new OtherRequirements(
+            constructionLevel: 81,
+            firemakingLevel: 82,
+            agilityLevel: 83,
+            thievingLevel: 85
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
