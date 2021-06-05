@@ -3170,6 +3170,21 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 1
         );
+    static Quest evilDavesBigDayOut = new Quest(
+        name: "Evil Dave's Big Day Out",
+        difficulty: "Intermediate",
+        questRequirements: new List<Quest>
+        {
+            recipeForDisasterFreeingEvilDave
+        },
+        otherRequirements: new OtherRequirements(
+            agilityLevel: 30,
+            cookingLevel: 30,
+            herbloreLevel: 30,
+            magicLevel: 30
+            ),
+        questPointsReward: 2
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
