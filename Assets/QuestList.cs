@@ -2961,6 +2961,18 @@ public class QuestList : MonoBehaviour
         difficulty: "Novice",
         questPointsReward: 1
         );
+    static Quest spiritualEnlightenment = new Quest(
+        name: "Spiritual Enlightenment",
+        difficulty: "Grandmaster",
+        questRequirements: new List<Quest>
+        {
+            impressingTheLocals
+        },
+        otherRequirements: new OtherRequirements(
+            slayerLevel: 90
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
