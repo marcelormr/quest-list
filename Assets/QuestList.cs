@@ -3382,6 +3382,15 @@ public class QuestList : MonoBehaviour
         },
         isMiniquest: true
         );
+    static Quest battleOfTheMonolith = new Quest(
+        name: "Battle of the Monolith",
+        difficulty: "Intermediate",
+        otherRequirements: new OtherRequirements(
+            archeologyLevel: 5
+            //Completion of Archaeology tutorial
+            ),
+        isMiniquest: true
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
