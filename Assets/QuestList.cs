@@ -2948,6 +2948,14 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 1
         );
+    static Quest gowerQuest = new Quest(
+        name: "Gower Quest",
+        difficulty: "Experienced",
+        otherRequirements: new OtherRequirements(
+            questPointsRequired: 34
+            ),
+        questPointsReward: 1
+        );
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
