@@ -2811,6 +2811,24 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 2
         );
+    static Quest theLordOfVampyrium = new Quest(
+        name: "The Lord of Vampyrium",
+        difficulty: "Master",
+        questRequirements: new List<Quest>
+        {
+            theBranchesOfDarkmeyer
+        },
+        otherRequirements: new OtherRequirements(
+            attackLevel: 75,
+            defenceLevel: 75,
+            strengthLevel: 75,
+            constitutionLevel: 75,
+            constructionLevel: 79,
+            slayerLevel: 78,
+            hunterLevel: 76
+            ),
+        questPointsReward: 2
+        );
     static Quest callOfTheAncestors = new Quest(
         name: "Call of the Ancestors",
         difficulty: "Novice",
