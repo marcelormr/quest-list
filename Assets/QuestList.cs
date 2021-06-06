@@ -43,6 +43,7 @@ public class QuestList : MonoBehaviour
 
     Skill archeology = new Skill("Archeology");
     #endregion
+    #region Quests
     static Quest cooksAssistant = new Quest(
         name: "Cook's Assistant",
         difficulty: "Novice",
@@ -3391,6 +3392,7 @@ public class QuestList : MonoBehaviour
             ),
         isMiniquest: true
         );
+    #endregion
     private void Start()
     {
         List<Skill> skills = new List<Skill> { attack, constitution, mining, strength, agility, smithing, defence, herblore, fishing, ranged, thieving, cooking, prayer, crafting, firemaking, magic, fletching, woodcutting, runecrafting, slayer, farming, construction, hunter, summoning, dungeoneering, divination, invention, archeology };
