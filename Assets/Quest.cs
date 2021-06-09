@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 public class Quest
 {
     public string name = "Quest Name";
@@ -21,6 +22,5 @@ public class Quest
         this.isMiniquest = isMiniquest;
         this.isSubquest = isSubquest;
         this.superQuest = superQuest;
-
     }
 }
