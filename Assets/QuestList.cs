@@ -44,7 +44,8 @@ public class QuestList : MonoBehaviour
     Skill archeology = new Skill("Archeology");
     #endregion
     #region Quests
-    static Quest cooksAssistant = new Quest(
+    #region Quest #1 to #10
+    public static Quest cooksAssistant = new Quest(
         name: "Cook's Assistant",
         difficulty: "Novice",
         questPointsReward: 1
@@ -94,6 +95,8 @@ public class QuestList : MonoBehaviour
         questPointsReward: 3,
         difficulty: "Novice"
         );
+    #endregion
+    #region Quest #11 to #20
     static Quest doricsQuest = new Quest(
         name: "Doric's Quest",
         questPointsReward: 1,
@@ -150,6 +153,8 @@ public class QuestList : MonoBehaviour
         questPointsReward: 4,
         difficulty: "Intermediate"
         );
+    #endregion
+    #region Quest #21 to #30
     static Quest merlinsCrystal = new Quest(
         name: "Merlin's Crystal",
         questPointsReward: 6,
@@ -233,6 +238,8 @@ public class QuestList : MonoBehaviour
         questRequirements: new List<Quest> { merlinsCrystal },
         otherRequirements: new OtherRequirements(attackLevel: 30)
         );
+    #endregion //Has Bar Crawl Miniquest
+    #region Quest #31 to #40
     static Quest treeGnomeVillage = new Quest(
         name: "Tree Gnome Village",
         questPointsReward: 2,
@@ -288,6 +295,8 @@ public class QuestList : MonoBehaviour
         difficulty: "Experienced",
         otherRequirements: new OtherRequirements(agilityLevel: 25)
         );
+    #endregion
+    #region Quest #41 to #50
     static Quest shiloVillage = new Quest(
         name: "Shilo Village",
         questPointsReward: 2,
@@ -382,6 +391,8 @@ public class QuestList : MonoBehaviour
             ),
         questPointsReward: 4
         );
+    #endregion
+    #region Quest #51 to #60
     static Quest runeMysteries_old = new Quest(
         name: "Rune Mysteries",
         difficulty: "Novice",
@@ -469,6 +480,8 @@ public class QuestList : MonoBehaviour
             agilityLevel: 15),
         questPointsReward: 1
         );
+    #endregion
+    #region Quest #61 to #70
     static Quest shadesOfMortton = new Quest(
         name: "Shades of Mort'ton",
         difficulty: "Intermediate",
@@ -558,6 +571,8 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 1
         );
+    #endregion
+    #region Quest #71 to #80
     static Quest ghostsAhoy = new Quest(
         name: "Ghosts Ahoy",
         difficulty: "Intermediate",
@@ -688,6 +703,7 @@ public class QuestList : MonoBehaviour
         },
         questPointsReward: 1
         );
+    #endregion
     static Quest theLostTribe = new Quest(
         name: "The Lost Tribe",
         difficulty: "Intermediate",
